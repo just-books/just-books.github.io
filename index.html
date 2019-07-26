@@ -1,40 +1,56 @@
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.jqueryui.min.css">
+<head>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.jqueryui.min.css">
 
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
-<table id="example" class="display" width="100%"></table>
+  <style type="text/css">
+    .qwer {
+      padding-top: 100px
+    } 
+    body {
+      background-color: #99cccc;
+    }
+  </style>
+</head>
 
-<script>
-var dataSet = [
-    [ "Харуки Мураками: Кафка на пляже", "<a href=\"https://clck.ru/GrYXL\">Купить</a>"],
-    [ "Айн Рэнд: Атлант расправил плечи. В 3-х книгах", "<a href=\"https://clck.ru/GrYaw\">Купить</a>"],
-    [ "Виктор Васильев: Белая книга", "<a href=\"https://clck.ru/GsmXY\">Купить</a>"],
-    [ "Харуки Мураками: Норвежский лес", "<a href=\"https:HJVUX//clck.ru/\">Купить</a>"],
-    [ "Лючия Робсон: Дорога Токайдо", "<a href=\"https://clck.ru/GtrNh\">Купить</a>"],
-    [ "Ева Левит: Бог нажимает на кнопки", "<a href=\"https://clck.ru/GtrPv\">Купить</a>"],
-    [ "Виталий Зыков: Безымянный раб", "<a href=\"https://clck.ru/GuiPx\">Купить</a>"],
-    [ "Джеймс Блэйлок: Машина лорда Келвина", "<a href=\"https://clck.ru/GxBX3\">Купить</a>"],
-    [ "Элен Вайсман: Что осталось после нее", "<a href=\"https://clck.ru/GxBXx\">Купить</a>"],
-    [ "Дэвид Алмонд: Песня для Эллы Грей", "<a href=\"https://clck.ru/GxBWU\">Купить</a>"],
-    [ "Томас Вулф: Паутина земли. Смерть - гордая сестра", "<a href=\"https://clck.ru/GxBYX\">Купить</a>"],
-    [ "Гроф: Неистовый поиск себя. Руководство по личностному росту через кризис трансформации", "<a href=\"https://clck.ru/H394b\">Купить</a>"],
-    [ "Надежда Фокина: Середина жизни. Конец или начало?", "<a href=\"https://clck.ru/H39LX\">Купить</a>"],
-    [ "Вирджиния Сатир: Вы и ваша семья. Руководство по личностному росту", "<a href=\"https://clck.ru/H39b2\">Купить</a>"],
-    [ "Мэтт Эйвери: Как научиться выступать на публике за 7 дней", "<a href=\"https://clck.ru/H99ze\">Купить</a>"],
-    [ "Алекс Новак: Другая книга, которой нет. 20 наиболее эффективных инструментов саморазвития", "<a href=\"https://clck.ru/H99dx\">Купить</a>"],
-    [ "Лайфхакер. 55 светлых идей по улучшению себя и своей жизни. Путеводитель по саморазвитию", "<a href=\"https://clck.ru/H99Rk\">Купить</a>"],
-    [ "Вив Гроскоп: Саморазвитие по Толстому. Жизненные уроки из 11 произведений русских классиков", "<a href=\"https://clck.ru/H99LT\">Купить</a>"],
-    [ "Джон Кехо: Подсознание может всё!", "<a href=\"https://clck.ru/HJRUU\">Купить</a>"]
-];
+<body>
 
-$(document).ready(function() {
-    $('#example').DataTable( {
-        data: dataSet,
-        columns: [
-            { title: "Книга" },
-            { title: "Ссылка" }
-        ]
-    } );
-} );
-</script>
+  <div class="qwer">
+    <table id="example" class="display" width="100%"></table>
+  </div>
+
+  <script>
+  var dataSet = [
+      [ "Харуки Мураками: Кафка на пляже", "<a href=\"https://clck.ru/GrYXL\">Купить</a>"],
+      [ "Айн Рэнд: Атлант расправил плечи. В 3-х книгах", "<a href=\"https://clck.ru/GrYaw\">Купить</a>"],
+      [ "Виктор Васильев: Белая книга", "<a href=\"https://clck.ru/GsmXY\">Купить</a>"],
+      [ "Харуки Мураками: Норвежский лес", "<a href=\"https:HJVUX//clck.ru/\">Купить</a>"],
+      [ "Лючия Робсон: Дорога Токайдо", "<a href=\"https://clck.ru/GtrNh\">Купить</a>"],
+      [ "Ева Левит: Бог нажимает на кнопки", "<a href=\"https://clck.ru/GtrPv\">Купить</a>"],
+      [ "Виталий Зыков: Безымянный раб", "<a href=\"https://clck.ru/GuiPx\">Купить</a>"],
+      [ "Джеймс Блэйлок: Машина лорда Келвина", "<a href=\"https://clck.ru/GxBX3\">Купить</a>"],
+      [ "Элен Вайсман: Что осталось после нее", "<a href=\"https://clck.ru/GxBXx\">Купить</a>"],
+      [ "Дэвид Алмонд: Песня для Эллы Грей", "<a href=\"https://clck.ru/GxBWU\">Купить</a>"],
+      [ "Томас Вулф: Паутина земли. Смерть - гордая сестра", "<a href=\"https://clck.ru/GxBYX\">Купить</a>"],
+      [ "Гроф: Неистовый поиск себя. Руководство по личностному росту через кризис трансформации", "<a href=\"https://clck.ru/H394b\">Купить</a>"],
+      [ "Надежда Фокина: Середина жизни. Конец или начало?", "<a href=\"https://clck.ru/H39LX\">Купить</a>"],
+      [ "Вирджиния Сатир: Вы и ваша семья. Руководство по личностному росту", "<a href=\"https://clck.ru/H39b2\">Купить</a>"],
+      [ "Мэтт Эйвери: Как научиться выступать на публике за 7 дней", "<a href=\"https://clck.ru/H99ze\">Купить</a>"],
+      [ "Алекс Новак: Другая книга, которой нет. 20 наиболее эффективных инструментов саморазвития", "<a href=\"https://clck.ru/H99dx\">Купить</a>"],
+      [ "Лайфхакер. 55 светлых идей по улучшению себя и своей жизни. Путеводитель по саморазвитию", "<a href=\"https://clck.ru/H99Rk\">Купить</a>"],
+      [ "Вив Гроскоп: Саморазвитие по Толстому. Жизненные уроки из 11 произведений русских классиков", "<a href=\"https://clck.ru/H99LT\">Купить</a>"],
+      [ "Джон Кехо: Подсознание может всё!", "<a href=\"https://clck.ru/HJRUU\">Купить</a>"]
+  ];
+
+  $(document).ready(function() {
+      $('#example').DataTable( {
+          data: dataSet,
+          columns: [
+              { title: "Книга" },
+              { title: "Ссылка" }
+          ]
+      } );
+  } );
+  </script>
+</body>
