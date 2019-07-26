@@ -1,0 +1,97 @@
+<link href="https://unpkg.com/bootstrap-table@1.15.3/dist/bootstrap-table.min.css" rel="stylesheet">
+
+<script src="https://unpkg.com/bootstrap-table@1.15.3/dist/bootstrap-table.min.js"></script>
+
+<table id="table" data-search="true">
+  <thead>
+    <tr>
+      <th data-field="name">Книга</th>
+      <th data-field="url">Ссылка</th>
+    </tr>
+  </thead>
+</table>
+
+<script>
+  var $table = $('#table')
+  $(function() {
+    var data = [
+      {
+        'name': 'Харуки Мураками: Кафка на пляже',
+        'url': 'https://clck.ru/GrYXL'
+      },
+      {
+        'name': 'Айн Рэнд: Атлант расправил плечи. В 3-х книгах',
+        'url': 'https://clck.ru/GrYaw'
+      },
+      {
+        'name': 'Виктор Васильев: Белая книга',
+        'url': 'https://clck.ru/GsmXY'
+      },
+      {
+        'name': 'Харуки Мураками: Кафка на пляже',
+        'url': 'https://clck.ru/GrYXL'
+      },
+      {
+        'name': 'Лючия Робсон: Дорога Токайдо',
+        'url': 'https://clck.ru/GtrNh'
+      },
+      {
+        'name': 'Ева Левит: Бог нажимает на кнопки',
+        'url': 'https://clck.ru/GtrPv'
+      },
+      {
+        'name': 'Виталий Зыков: Безымянный раб',
+        'url': 'https://clck.ru/GuiPx'
+      },
+      {
+        'name': 'Джеймс Блэйлок: Машина лорда Келвина',
+        'url': 'https://clck.ru/GxBX3'
+      },
+      {
+        'name': 'Элен Вайсман: Что осталось после нее',
+        'url': 'https://clck.ru/GxBXx'
+      },
+      {
+        'name': 'Дэвид Алмонд: Песня для Эллы Грей',
+        'url': 'https://clck.ru/GxBWU'
+      },
+      {
+        'name': 'Томас Вулф: Паутина земли. Смерть - гордая сестра',
+        'url': 'https://clck.ru/GxBYX'
+      },
+      {
+        'name': 'Гроф: Неистовый поиск себя. Руководство по личностному росту через кризис трансформации',
+        'url': 'https://clck.ru/H394b'
+      },
+      {
+        'name': 'Надежда Фокина: Середина жизни. Конец или начало?',
+        'url': 'https://clck.ru/H39LX'
+      },
+      {
+        'name': 'Вирджиния Сатир: Вы и ваша семья. Руководство по личностному росту ',
+        'url': 'https://clck.ru/H39b2'
+      },
+      {
+        'name': 'Мэтт Эйвери: Как научиться выступать на публике за 7 дней',
+        'url': 'https://clck.ru/H99ze'
+      },
+      {
+        'name': 'Алекс Новак: Другая книга, которой нет. 20 наиболее эффективных инструментов саморазвития',
+        'url': 'https://clck.ru/H99dx'
+      },
+      {
+        'name': 'Лайфхакер. 55 светлых идей по улучшению себя и своей жизни. Путеводитель по саморазвитию.',
+        'url': 'https://clck.ru/H99Rk'
+      },
+      {
+        'name': 'Вив Гроскоп: Саморазвитие по Толстому. Жизненные уроки из 11 произведений русских классиков.',
+        'url': 'https://clck.ru/H99LT'
+      },
+      {
+        'name': 'Джон Кехо: Подсознание может всё!',
+        'url': 'https://clck.ru/HJRUU'
+      }
+    ]
+    $table.bootstrapTable({data: data})
+  })
+</script>
